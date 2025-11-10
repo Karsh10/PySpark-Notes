@@ -17,75 +17,52 @@ Star it If it looks helpful
 
 ---
 
-### 🟢 **BASIC LEVEL (Days 1–10)**
-> *Foundation — understanding Spark internals and basic DataFrame operations.*
+## 🟢 BASIC LEVEL (Days 1–10)
+> *Foundation — Understanding Spark’s core concepts and DataFrame basics.*
 
-#### 🔸 Topics & Notes
-Day 1 — Spark Architecture + Lazy Evaluation  
-Day 2 — RDDs & Transformations  
-Day 3 — Spark UI + Jobs & Stages  
-Day 4 — DataFrame Basics  
-  -`read.csv`, schema inference, `select`, `filter`, `withColumn`  
-Day 5 — Data Cleaning & Column Ops  
-  -`na.fill`, `na.drop`, renaming columns, handling missing values  
-Day 6 — Aggregations & GroupBy  
-  -`groupBy`, `agg`, `sum`, `avg`, `count`, `alias`  
-Day 7 — Joins in PySpark  
-  -Inner, Left, Right, Full, Broadcast,Performance impact  
-Day 8 — SparkSQL  
-  -Create temp views, run queries  
-  -Compare SQL vs API performance  
-Day 9 — Window Functions  
-  -`rank`, `dense_rank`, `row_number`  
-  -Partitioning & ordering  
-Day 10 — Data Writing & Parquet  
-  -Save formats, modes, partitionBy, overwrite  
+| Day | Topic | Content Covered |
+|:--:|:--|:--|
+| 1 | [Spark Architecture + Lazy Evaluation](https://github.com/Karsh10/Pyspark_Notes/blob/main/1.BASIC/1) | Spark driver, executors, DAG, lazy vs eager execution |
+| 2 | RDDs & Transformations | RDD concepts, map/filter/flatMap, narrow vs wide transformations |
+| 3 | Spark UI + Jobs & Stages | Understanding Spark UI, job → stage → task breakdown |
+| 4 | [DataFrame Basics](https://github.com/Karsh10/Pyspark_Notes/blob/main/1.BASIC/4/20DataFrame%20Basics/DAY%2004%20notes.md) | Creating DataFrames, reading CSV/JSON, schema inference |
+| 5 | [Data Cleaning & Column Operations](https://github.com/Karsh10/Pyspark_Notes/blob/main/1.BASIC/5/20Data%20Cleaning%20%26%20Column%20Ops/Day%2005%20notes.md) | Handling nulls, `withColumn`, `na.fill`, `drop`, renaming columns |
+| 6 | Aggregations & GroupBy | `groupBy`, `agg`, `count`, `sum`, `avg`, aliasing |
+| 7 | Joins in PySpark | Inner, left, right, full joins, and broadcast joins |
+| 8 | SparkSQL | `createOrReplaceTempView`, running SQL queries, comparing plans |
+| 9 | Window Functions | Ranking functions (`rank`, `dense_rank`, `row_number`), partitions |
+| 10 | Data Writing & File Formats | Write to CSV, JSON, Parquet, use of partitionBy and modes |
 
-### 🟡 **INTERMEDIATE LEVEL (Days 11–20)**
-> *Tuning, caching, and advanced performance handling.*
-#### 🔸 Topics & Notes
-Day 11 — Partitioning Optimization  
-  -`repartition()`, `coalesce()`, partition sizing  
-Day 12 — Join Optimization  
-  -Broadcast joins, sort-merge joins  
-  -Shuffle optimization  
-Day 13 — Caching & Persistence  
-  -`cache()`, `persist(level)`, Spark storage levels  
-Day 14 — Dynamic Resource Management  
-  -Executor memory, parallelism, auto-scaling  
-Day 15 — Adaptive Query Execution (AQE)  
-  -Runtime plan adaptation, shuffle partition coalescing  
-Day 16 — Dynamic Partition Pruning  
-  -Predicate pushdown, partition filters  
-Day 17 — Broadcast Variables & Accumulators  
-  -Global variable sharing, counters  
-Day 18 — Salting & Skew Handling  
-  -Fixing skew with extra keys, balancing tasks  
-Day 19 — Delta Lake Basics  
-  -ACID properties, schema evolution  
-Day 20 — Delta Optimization  
-  -Compaction, Z-order, optimize command  
+## 🟡 INTERMEDIATE LEVEL (Days 11–20)
+> *Performance optimization, tuning, caching, and Delta Lake fundamentals.*
 
-### 🔴 **ADVANCED LEVEL (Days 21–30)**
-> *Real-time processing, Structured Streaming, and final ETL pipeline.*
-#### 🔸 Topics & Notes
-Day 21 — Structured Streaming Intro  
-  -Micro-batching, continuous mode, architecture  
-Day 22 — Stateful vs Stateless Transformations  
-  -`updateStateByKey`, checkpointing  
-Day 23 — JSON Streaming ETL  
-  -Read real-time JSON data, flatten nested columns  
-Day 24 — Triggers & Output Modes  
-  -Append, Complete, Update  
-Day 25 — ForEachBatch Logic  
-  -Custom sink ETL handling  
--Day 26 — Event Time & Watermarks  
-  -Handling late events  
-Day 27 — Windowed Streaming  
-  -Tumbling, sliding, session windows  
-Day 28 — ETL Integration (Batch + Stream)  
-  -Combine real-time + static pipelines  
-Day 29 — Delta Lake Final Project  
-  -Unified ETL pipeline with Delta Lake  
-Day 30 — Wrap-Up 
+| Day | Topic | Content Covered |
+|:--:|:--|:--|
+| 11 | Partitioning Optimization | `repartition`, `coalesce`, partition sizing and performance |
+| 12 | Join Optimization | Broadcast join, sort-merge join, shuffle reduction |
+| 13 | Caching & Persistence | `cache()`, `persist()`, `unpersist()`, Spark storage levels |
+| 14 | Dynamic Resource Management | Executor memory, cores, and dynamic allocation |
+| 15 | Adaptive Query Execution (AQE) | Runtime plan optimization, shuffle coalescing, skew join handling |
+| 16 | Dynamic Partition Pruning | Filter pushdown, predicate pruning |
+| 17 | Broadcast Variables & Accumulators | Global vars, counters, and data sharing across tasks |
+| 18 | Salting & Skew Handling | Skew mitigation, adding salts, data balancing |
+| 19 | Delta Lake Basics | ACID transactions, schema enforcement, Delta tables |
+| 20 | Delta Optimization | Z-ordering, compaction, vacuum, `OPTIMIZE` command |
+
+
+## 🔴 ADVANCED LEVEL (Days 21–30)
+> *Structured Streaming, Event-time handling, and final Delta Lake project.*
+
+| Day | Topic | Content Covered |
+|:--:|:--|:--|
+| 21 | Structured Streaming Introduction | Micro-batching vs continuous mode, streaming architecture |
+| 22 | Stateful vs Stateless Transformations | Stateful aggregations, checkpointing |
+| 23 | JSON Streaming ETL | Reading JSON streams, flattening nested structures |
+| 24 | Triggers & Output Modes | Append, complete, update modes |
+| 25 | ForEachBatch Logic | Custom ETL processing inside `foreachBatch` |
+| 26 | Event Time & Watermarks | Handling late-arriving data, watermark thresholds |
+| 27 | Windowed Streaming | Tumbling, sliding, session windows, aggregations |
+| 28 | Batch + Streaming Integration | Merging static and streaming data pipelines |
+| 29 | Delta Lake Final Project | Unified Delta ETL pipeline (batch + stream) |
+| 30 | Wrap-up  | update README |
 
