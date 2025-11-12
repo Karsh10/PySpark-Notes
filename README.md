@@ -28,7 +28,7 @@ Star it If it looks helpful
 | 4 | [DataFrame Basics](https://github.com/Karsh10/PySpark-Notes/blob/4496cd834ce4c69f32cbf5620e48b3c7261ad35c/1.BASIC/4.%20DataFrame%20Basics/DAY%2004%20notes.md) | Creating DataFrames, reading CSV/JSON, schema inference |
 | 5 | [Data Cleaning & Column Operations](https://github.com/Karsh10/PySpark-Notes/blob/4496cd834ce4c69f32cbf5620e48b3c7261ad35c/1.BASIC/5.%20Data%20Cleaning%20%26%20Column%20Ops/Day%2005%20notes.md) | Handling nulls, `withColumn`, `na.fill`, `drop`, renaming columns |
 | 6 | [Aggregations & GroupBy](https://github.com/Karsh10/PySpark-Notes/blob/4496cd834ce4c69f32cbf5620e48b3c7261ad35c/1.BASIC/6.%20Agg%20Functions%20%2CGroup%20By%20etc/PySpark%20Aggregations%20and%20Functions.md) | `groupBy`, `agg`, `count`, `sum`, `avg`, aliasing |
-| 7 | Joins in PySpark| Inner, left, right, full joins, and broadcast joins |
+| 7 | [Joins in PySpark](https://github.com/Karsh10/PySpark-Notes/blob/0d7d96a98e3bd71ec2d586468359db70ea4fa9e9/1.BASIC/7.%20Joins/Joins.md)| Inner, left, right, full joins, and broadcast joins |
 | 8 | SparkSQL | `createOrReplaceTempView`, running SQL queries, comparing plans |
 | 9 | Window Functions | Ranking functions (`rank`, `dense_rank`, `row_number`), partitions |
 | 10 | Data Writing & File Formats | Write to CSV, JSON, Parquet, use of partitionBy and modes |
