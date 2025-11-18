@@ -18,7 +18,7 @@ Star it If it looks helpful
 
 ---
 
-## 🟢 BASIC LEVEL (Days 1–10)
+## 🟢 BASIC LEVEL 
 > *Foundation — Understanding Spark’s core concepts and DataFrame basics.*
 
 | Day | Topic | Content Covered |
@@ -34,7 +34,7 @@ Star it If it looks helpful
 | 9 | [Window Functions](https://github.com/Karsh10/PySpark-Notes/blob/eed3f6a140c00a0a772565f4da328172183be0b0/1.BASIC/8.Window%20Function/Window%20Functions.md) | Ranking functions (`rank`, `dense_rank`, `row_number`) |
 | 10 | [Data Writing & File Formats](https://github.com/Karsh10/PySpark-Notes/blob/684bfc3917d61d5f87296573b397ba7616e174e9/1.BASIC/9.%20Data%20Reading/Data%20Reading.md) | Write to CSV, JSON, Parquet, use of partitionBy and modes |
 
-## 🟡 INTERMEDIATE LEVEL (Days 11–20)
+## 🟡 INTERMEDIATE LEVEL 
 > *Performance optimization, tuning, caching, and Delta Lake fundamentals.*
 
 | Day | Topic | Content Covered |
@@ -51,7 +51,7 @@ Star it If it looks helpful
 | 20 | Delta Optimization | Z-ordering, compaction, vacuum, `OPTIMIZE` command |
 
 
-## 🔴 ADVANCED LEVEL (Days 21–30)
+## 🔴 ADVANCED LEVEL 
 > *Structured Streaming, Event-time handling, and final Delta Lake project.*
 
 | Day | Topic | Content Covered |
