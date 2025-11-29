@@ -39,7 +39,7 @@ Star it If it looks helpful
 
 | Day | Topic | Content Covered |
 |:--:|:--|:--|
-| 11 | [Partitioning Optimization](https://github.com/Karsh10/PySpark-Notes/blob/0d21c87d68c7c18cbc64e94816862f20594ec768/2.INTERMEDIATE/Day%2011/DAY%2011%20optimization.md) | `repartition`, partition sizing and performance |
+| 11 | [Partitioning Optimization](https://github.com/Karsh10/PySpark-Notes/blob/3678c4dd0c558644e0f61fb679fa55a29960b698/2.INTERMEDIATE/Day%2011/Airflow%20Optimization.md) | `repartition`, partition sizing and performance |
 | 12 | [Join Optimization](https://github.com/Karsh10/PySpark-Notes/blob/b69ebd056de740e2adf81903d4776460dd95befd/2.INTERMEDIATE/Day%2012/Spark%20Joins.md) | Broadcast join, sort-merge join, shuffle reduction |
 | 13 | Caching & Persistence | `cache()`, `persist()`, `unpersist()`, Spark storage levels |
 | 14 | Dynamic Resource Management | Executor memory, cores, and dynamic allocation |
